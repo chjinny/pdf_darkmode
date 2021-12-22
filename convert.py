@@ -93,7 +93,10 @@ def convert_to_dark(html_path):
         if not "data:image/png" in img_urls:
             continue
         array = uri_to_array(img_urls)
-        array = segment(array)
+        if config["adaptive_conversion"]:
+            array = segment(array)
+        else:
+            array = 255 - array
         url = array_to_uri(array)
         img['src'] = url
     
@@ -146,6 +149,9 @@ if __name__ == "__main__":
             input_path = os.path.join(path, file)
             html_path = os.path.join(output_dir, f"{file_name}.html")
             output_path = os.path.join(output_dir, f"{file_name}.pdf")
+            print("1. read pdf")
             convert_pdf_to_html(input_path, html_path)
+            print("2. conversion")
             convert_to_dark(html_path)
+            print("3. write pdf")
             html_to_pdf(html_path, output_path)

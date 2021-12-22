@@ -1,4 +1,5 @@
 {
     "input_dir" : "./input/",
-    "output_dir" : "./output/"
+    "output_dir" : "./output/",
+    "adaptive_conversion" : true
 }
