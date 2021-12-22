@@ -6,8 +6,8 @@
 
 ## Install dependency
 1. Install pdf2htmlEX
-Visit https://github.com/pdf2htmlEX/pdf2htmlEX/releases
-
+- Ubuntu https://github.com/pdf2htmlEX/pdf2htmlEX/releases
+- Windows https://soft.rubypdf.com/software/pdf2htmlex-windows-version
 2. Create conda env
 ```
 conda env create -f env.yaml
