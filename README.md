@@ -21,7 +21,7 @@ conda env create -f env.yaml
 {
     "input_dir" : "./input/", // input pdf dir 
     "output_dir" : "./output/" // output pdf dir
-    "adaptive_conversion" : true // adaptive conversion
+    "adaptive_conversion" : false // adaptive conversion
 }
 ```
 ### Adaptive Conversion
