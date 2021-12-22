@@ -5,8 +5,9 @@
 
 
 ## Install dependency
-1. Install [pdf2htmlEX](https://github.com/pdf2htmlEX/pdf2htmlEX/releases)
-
+<<<<<<< HEAD
+1. Install pdf2htmlEX [Ubuntu](https://github.com/pdf2htmlEX/pdf2htmlEX/releases)
+ [Windows](https://soft.rubypdf.com/software/pdf2htmlex-windows-version)
 2. Install [Chrome Browser](https://www.google.com/intl/ko/chrome/)
 
 3. Create conda env
